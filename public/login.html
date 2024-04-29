@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="landingPage.html">Home</a>
+        <a class="active" href="login.html">Login</a>
+        <a href="localfarmersmarket.html">Navigate</a>
+        <a href=""><img src="greenshoppingcart.png" alt="Shopping Cart" style="width:22px;height:22px;"></a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+
+    <div class="login">
+        <h1>Farmer Login</h1>
+        <form action="http://127.0.0.1:5500/public/FarnerPortal.html">
+            <label for="username"></label>
+            <input type="text" name="username" placeholder="Username" id="username" required>
+            <label for="password"></label>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <a href="http://localhost:8080/db">Register</a> 
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="login">
+        <h1>User Login</h1>
+        <form action="http://127.0.0.1:5500/public/UserPortal.html">
+            <label for="username"></label>
+            <input type="text" name="username" placeholder="Username" id="user_username" required>
+            <label for="password"></label>
+            <input type="password" name="password" placeholder="Password" id="user_password" required>
+            <a href="http://localhost:8080/dbuser">Register</a>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
